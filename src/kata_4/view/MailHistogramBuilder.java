@@ -6,7 +6,7 @@ import kata_4.model.*;
 
 public class MailHistogramBuilder{
 
-    public Histogram<String> build(List<Mail> l) {
+    public static Histogram<String> build(List<Mail> l) {
         Histogram<String> histogram = new Histogram<String>();
         for (Mail mail : l) {
             histogram.increment(mail.getDomain());
